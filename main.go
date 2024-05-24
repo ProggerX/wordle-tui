@@ -16,8 +16,8 @@ var str string
 func main() {
 	words := strings.Split(str, "\n")
 	word := words[rand.Intn(5757)]
-	color.White("You have 5 tries to guess:")
-	for range 5 {
+	color.White("You have 6 tries to guess:")
+	for range 6 {
 		var guess string
 		fmt.Scan(&guess)
 		if len(guess) != 5 {
